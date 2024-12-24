@@ -24,12 +24,12 @@ variable "env" {
 
 variable "ports" {
   type = list(number)
-  default = [22, 80, 443]
+  default = [22, 80, 443, 3369]
   description = "List of ports"
 }
 
 variable "cidrs" {
   type = list(string)
-  default = ["73.74.183.123/32","0.0.0.0/0","0.0.0.0/0"]
+  default = ["0.0.0.0/0","73.74.183.123/32","0.0.0.0/0","0.0.0.0/0"]
   description = "List of ports"
 }
