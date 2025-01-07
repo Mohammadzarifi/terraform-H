@@ -1,4 +1,5 @@
 resource "aws_instance" "web" {
+  count = 3
   ami                    = data.aws_ami.ubuntu.id
   vpc_security_group_ids = [aws_security_group.web.id]
   instance_type = var.env == "prod" ? var.instance_type[1] : var.instance_type[0]
