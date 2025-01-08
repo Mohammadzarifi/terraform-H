@@ -1,9 +1,9 @@
 provider "aws" {
-  region = "us-east-1"  # or your preferred region
+  region = "us-west-2"  # region
 }
 
 resource "aws_instance" "web" {
-  ami             = "ami-0abcdef1234567890"  # Replace with your Amazon Linux 2023 AMI ID
+  ami             = "ami-00198294ed4395e0d"  # AMI copied from Aws
   instance_type   = "t2.micro"
 
   tags = {
