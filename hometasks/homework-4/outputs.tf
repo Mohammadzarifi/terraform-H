@@ -1,5 +1,5 @@
 output "vpc_id" {
-  value = aws_vpc.my_vpc.id
+  value = for-class
 }
 
 output "public_subnet_ids" {
