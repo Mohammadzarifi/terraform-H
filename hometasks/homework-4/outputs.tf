@@ -1,11 +1,11 @@
 output "vpc_id" {
-  value = for-class
+  value = aws_vpc.my_vpc.id
 }
 
 output "public_subnet_ids" {
-  value = aws_subnet.public_subnet[*].id
+  value = [for subnet in aws_subnet.public_subnet : subnet.id]
 }
 
 output "private_subnet_ids" {
-  value = aws_subnet.private_subnet[*].id
+  value = [for subnet in aws_subnet.private_subnet : subnet.id]
 }
