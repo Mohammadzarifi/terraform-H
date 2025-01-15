@@ -16,7 +16,7 @@ variable "vpc_name" {
 # Public/Private Subnets' AZs
 variable "subnets_az" {
   type = list(string)
-  # default     = ["us-east-1a", "us-east-1b", "us-east-1c"]
+  # default     = ["us-west-2", "us-west-2a", "us-west-2b"]
   description = "Public Subnets Avaialability Zones"
 }
 

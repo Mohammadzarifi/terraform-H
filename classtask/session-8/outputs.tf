@@ -1,6 +1,6 @@
 output "ec2_public_ip" {
     value = aws_instance.web.public_ip
-    description = "This is my public IP"
+    description = "This is public IP"
 }
 
 output "default_vpc_arn" {
@@ -14,6 +14,6 @@ output "sg_id" {
 
 /*
 Outputs
-- outputting any attribute of resource OR data source
+outputtin any attributes
 
 */
