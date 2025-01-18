@@ -1,3 +1,10 @@
+/*
+this block of code fetches it's needed conf from 
+#terraform-H/hometasks/homework-4
+
+*/
+
+
 data "terraform_remote_state" "vpc" {
   backend = "s3"
 
@@ -7,3 +14,7 @@ data "terraform_remote_state" "vpc" {
     region = "us-west-2"
     }
   }
+
+
+
+
